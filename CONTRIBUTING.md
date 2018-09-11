@@ -4,7 +4,7 @@
 
 This project and everyone participating in it is governed by the [MetWork Code of Conduct](https://github.com/metwork-framework/resources/blob/master/documents/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [fixme@metwork-framework.org](mailto:fixme@metwork-framework.org).
 
-## Branch management
+## Branch management
 
 In this repository:
 
