@@ -16,7 +16,7 @@ We keep `integration` and `master` branch very close. And frequently, repositor
 
 We only integrate changes to `master` from `integration` branch (we are searching a way to enforce that on github).
 
-## Submitting a change
+## Submitting a change
 
 So, the recommended way to submit a change is to make a pull-request on `integration` branch. When the pull-request will be accepted 
 (so when your code will be on `integration` branch), your change will be visible on staging environnement.
