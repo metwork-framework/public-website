@@ -12,6 +12,9 @@
 - first version as a mfserv plugin
 
 
+### Bug Fixes
+- fix twitter link (thanks Joel)
+
 
 
 
