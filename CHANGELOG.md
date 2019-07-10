@@ -13,6 +13,7 @@
 
 
 ### Bug Fixes
+- MIME text_plain duplicate deleted
 - fix twitter link (thanks Joel)
 
 
