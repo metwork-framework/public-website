@@ -14,7 +14,18 @@ pipeline:
     image: metwork/mfservplugins-${OS_VERSION}-buildimage:master
     when:
       event: push
-      branch: [ master, ci_*, pci_* ]
+      branch: [ ci_*, pci_* ]
+  deploy:
+    image: metwork/mfservplugins-${OS_VERSION}-buildimage:master
+    commands:
+      - cat main/index.html |sed "s/{{DRONE_COMMIT}}/${DRONE_COMMIT}/g" >main/index2.html
+      - mv -f main/index2.html main/index.html
+      - /opt/metwork-mfserv/bin/mfserv_wrapper make release
+      - PLUG=$(ls -rt *.plugin |tail -1)
+      - curl -v -XPOST --data-binary @$${PLUG} http://localhost:9000/hotswap/
+    when:
+      event: push
+      branch: master
 
 matrix:
   OS_VERSION:
