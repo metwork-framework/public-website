@@ -23,6 +23,7 @@ pipeline:
       - mv -f main/index2.html main/index.html
       - /opt/metwork-mfserv/bin/mfserv_wrapper make release
       - PLUG=$(ls -rt *.plugin |tail -1)
+      - yum -y install iproute
       - HOSTIP=$(ip addr show docker0 | grep -Po 'inet \K[\d.]+')
       - curl -v -XPOST --data-binary @$${PLUG} http://$${HOSTIP}:9000/hotswap/
     when:
