@@ -17,12 +17,14 @@ pipeline:
       branch: [ ci_*, pci_* ]
   deploy:
     image: metwork/mfservplugins-${OS_VERSION}-buildimage:master
+    network_mode: host
     commands:
       - cat main/index.html |sed "s/{{DRONE_COMMIT}}/${DRONE_COMMIT}/g" >main/index2.html
       - mv -f main/index2.html main/index.html
       - /opt/metwork-mfserv/bin/mfserv_wrapper make release
       - PLUG=$(ls -rt *.plugin |tail -1)
-      - curl -v -XPOST --data-binary @$${PLUG} http://localhost:9000/hotswap/
+      - HOSTIP=$(ip addr show docker0 | grep -Po 'inet \K[\d.]+')
+      - curl -v -XPOST --data-binary @$${PLUG} http://$${HOSTIP}:9000/hotswap/
     when:
       event: push
       branch: master
