@@ -4,6 +4,7 @@
 ## [Unreleased]
 
 ### New Features
+- add some links
 - add gzip compression
 - change/optimize images
 - remove twitter widget and add upscribe popup/widget
