@@ -4,6 +4,7 @@
 ## [Unreleased]
 
 ### New Features
+- use mailjet
 - add some links
 - add gzip compression
 - change/optimize images
