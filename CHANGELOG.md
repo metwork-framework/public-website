@@ -4,6 +4,8 @@
 ## [Unreleased]
 
 ### New Features
+- use mailjet
+- add some links
 - add gzip compression
 - change/optimize images
 - remove twitter widget and add upscribe popup/widget

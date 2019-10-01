@@ -549,6 +549,15 @@
         </div>
       </div>
     </div>
+<data id="mj-w-res-data" data-token="2be183bbbce0047bc322a3d919c906c9" class="mj-w-data" data-apikey="4meh" data-w-id="iQm" data-lang="en_US" data-base="https://app.mailjet.com" data-width="640" data-height="328" data-statics="statics"></data>
+
+<div class="mj-w-button mj-w-btn" data-token="2be183bbbce0047bc322a3d919c906c9" style="font-family: Ubuntu, Helvetica; color: white; padding: 0 25px; background-color: #f0622b; text-align: center; vertical-align: middle; display: inline-block; border-radius: 3px;">
+    <div style="display: table; height: 45px;">
+        <div style="display: table-cell; vertical-align: middle;">
+            <div class="mj-w-button-content" style="font-family:Ubuntu, Helvetica; display: inline-block; text-align: center; font-size: 13px; vertical-align: middle;"><b>SUBSCRIBE TO NEWSLETTER!</b></div>
+        </div>
+    </div>
+</div>
   </div>
   <!-- End Contact Area -->
 
@@ -596,8 +605,28 @@
 
   <script src="js/main.js"></script>
 
+  <script type="text/javascript" src="https://app.mailjet.com/statics/js/widget.modal.js"></script>
 
-  <script>window.upsettings = {'api_key': '2925dd1309-c0d7-ca0c9f91'}</script><script>(function(){var w=window;var up=w.Upscribe;if(typeof up==="function"){up('reattach_activator');up('update',upsettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Upscribe=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://upscri.be/js/snippet.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if( w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+<script>
+    // Set widget cookie
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        document.cookie = cname + "=" + cvalue + ";expires="+d.toUTCString() + ";path=/";
+    }
+
+    // Get widget cookie
+    function getCookie(name) {
+        return document.cookie.match(RegExp('(?:^|;\\s*)' + name + '=([^;]*)'));
+    }
+
+    setTimeout(function(){
+        if (!getCookie('mjPopinShown')) {
+            setCookie("mjPopinShown", true, 1);
+            mjOpenPopin(document.createEvent('Event'), document.getElementById('mj-w-res-data'));
+        }
+    }, 5000);
+</script>
 
 </body>
 
