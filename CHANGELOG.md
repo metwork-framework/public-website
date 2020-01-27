@@ -4,6 +4,8 @@
 ## [Unreleased]
 
 ### New Features
+- change mfext more details link
+- plugin format migration
 - add mfdata link
 - use mailjet
 - add some links
