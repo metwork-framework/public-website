@@ -1,17 +1,14 @@
 # public-website
 
-[//]: # (automatically generated from https://github.com/metwork-framework/resources/blob/master/cookiecutter/_%7B%7Bcookiecutter.repo%7D%7D/README.md)
+[//]: # (automatically generated from https://github.com/metwork-framework/github_organization_management/blob/master/common_files/README.md)
 
 **Status (master branch)**
-
 
 
 
 [![Drone CI](http://metwork-framework.org:8000/api/badges/metwork-framework/public-website/status.svg)](http://metwork-framework.org:8000/metwork-framework/public-website)
 [![Maintenance](https://github.com/metwork-framework/resources/blob/master/badges/maintained.svg)]()
 
-
-[//]: # (TABLE_OF_CONTENTS_PLACEHOLDER)
 
 
 
@@ -24,11 +21,6 @@ This repository holds the public website sources for metwork-framework.org
 - Theme Name: Regna
 - Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
 - Author: BootstrapMade.com
-
-
-
-
-
 
 
 
