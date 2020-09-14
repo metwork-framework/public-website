@@ -18,6 +18,7 @@
 
 
 ### Bug Fixes
+- python3@mfserv doesn't exist anymore, we have to use python3@mfext instead
 - typos
 - MIME text_plain duplicate deleted
 - fix twitter link (thanks Joel)
