@@ -14,7 +14,7 @@
 
 ## What is it ?
 
-This repository holds the public website sources for [metwork-framework.org](https://metwork-framework.org/public-website/)
+This repository holds the public website sources for metwork-framework.org
 
 ## Theme used:
 
