@@ -1,6 +1,5 @@
 pipeline:
   build:
-    <<: *build_common
     image: metwork/mfservplugins-${OS_VERSION}-buildimage:master
     commands:
       - /opt/metwork-mfserv/bin/mfserv_wrapper make release
