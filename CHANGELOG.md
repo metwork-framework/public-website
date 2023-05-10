@@ -15,6 +15,8 @@
 - add mfdata link
 - plugin format migration
 - change mfext more details link
+- upgrade jquery.min.js from 1.12.4 to 3.5.1
+- add links for mfbase, mfserv and mfadmin
 
 ### Bug Fixes
 
